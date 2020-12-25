@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="cartpage.css">
+    <link rel="stylesheet" type="text/css" href="lightslider.css" />
+    <!--Jquery-->
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <title>My Cart</title>
+    <link rel="shortcut icon" href="songkolok.png">
+</head>
+
+<body>
+    <div id="nav" class="grid">
+        <div class="logo">
+            <a href="#"><img id="logo-img" src="songkolok.png"></a>
+            <a href="#"><img id="logo-title" src="logo-title.png" alt=""></a>
+        </div>
+
+        <div class="menu-open" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">EID SPEACIAL</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a style="cursor:pointer" onclick="login()"><i class='fas fa-user'></i> Login</a>
+            <a href="#"><i id="shopping-bag" class='fas fa-shopping-bag'></i> Cart (0)</a>
+            <form id="search">
+                <input type="text" placeholder="Search Products..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="links">
+            <form id="search" class="nav-menu">
+                <input type="text" placeholder="Search Products..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a class="nav-menu" id="cart" href=""><i id="shopping-bag" class='fas fa-shopping-bag'></i> Cart (0)</a>
+            <a class="nav-menu" style="cursor:pointer" onclick="login()">Hi John!</a>
+            <a class="nav-menu" style="cursor:pointer" onclick="login()">Log Out <i class='far fa-user'></i></a>
+        </div>
+    </div>
+
+    <div id="login-block">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form action="#" id="login">
+                <h4>Email</h4>
+                <input class="fas fa-envelope" type="email" placeholder="&#xf0e0; Type your email"><br>
+                <h4>Password</h4>
+                <input class="fas fa-lock" type="password" placeholder="&#xf023; Type your password"><br>
+                <a href="#">
+                    <h6>Forgot password?</h6>
+                </a>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="line">
+            <div class="or">or</div>
+        </div>
+        <div class="login-social-media">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-google"></a>
+        </div>
+        <div class="signup-link">
+            <h5>DON’T HAVE AN ACCOUNT?</h5>
+            <a style="cursor:pointer" onclick="signup()">SIGN UP</a>
+        </div>
+    </div>
+
+    <div id="signup-block">
+        <div class="login-form">
+            <h1>Sign Up</h1>
+            <form action="#" id="login">
+                <h4>Email</h4>
+                <input type="email" class="fas fa-envelope" type="email" placeholder="&#xf0e0; Type your email"><br>
+                <h4>Password</h4>
+                <input type="password" class="fas fa-lock" type="password" placeholder="&#xf023; Type your password"><br>
+                <br>
+                <h4>Re-Password</h4>
+                <input type="password" class="fas fa-lock" type="password" placeholder="&#xf023; Type your password again"><br>
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="line">
+            <div class="or">or</div>
+        </div>
+        <div class="login-social-media">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-google"></a>
+        </div>
+    </div>
+
+    <div id="images" class="grid">
+        <div class="main-menu-block">
+            <ul class="main-menu">
+                <li><a href="#">Home</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">MEN</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">WOMEN</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">EID SPEACIAL</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">KIDS</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">Home</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">Home</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="my-cart">
+            <h1>MY SHOPPING BAG</h1>
+        </div>
+    </div>
+
+    <div id="cart-container" class="grid">
+        <form class="" action="index.html" method="post">
+            <table id="cartdetails">
+                <tr>
+                    <th>No.</th>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Remove</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td><img src="product11.jpg" class="model"><a href="">Cotton Short Sleeve T-shirt</a></td>
+                    <td>500 taka</td>
+                    <td>
+                        <input type="number" name="" min="1" value="1">
+                    </td>
+                    <td>500 taka</td>
+                    <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td><img src="product1.jpg" class="model"><a href="">Cotton Short Sleeve T-shirt</a></td>
+                    <td>500 taka</td>
+                    <td>
+                        <input type="number" name="" min="1" value="1">
+                    </td>
+                    <td>500 taka</td>
+                    <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td><img src="product1.jpg" class="model"><a href="">Cotton Short Sleeve T-shirt</a></td>
+                    <td>500 taka</td>
+                    <td>
+                        <input type="number" name="" min="1" value="1">
+                    </td>
+                    <td>500 taka</td>
+                    <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td><img src="product2.jpg" class="model"><a href="">Cotton Short Sleeve T-shirt</a></td>
+                    <td>500 taka</td>
+                    <td>
+                        <input type="number" name="" min="1" value="1">
+                    </td>
+                    <td>500 taka</td>
+                    <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td><img src="product3.jpg" class="model"><a href="">Cotton Short Sleeve T-shirt</a></td>
+                    <td>500 taka</td>
+                    <td>
+                        <input type="number" name="" min="1" value="1">
+                    </td>
+                    <td>500 taka</td>
+                    <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td><img src="product3.jpg" class="model"><a href="">Cotton Short Sleeve T-shirt</a></td>
+                    <td>500 taka</td>
+                    <td>
+                        <input type="number" name="" min="1" value="1">
+                    </td>
+                    <td>500 taka</td>
+                    <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td><img src="product3.jpg" class="model"><a href="">Cotton Short Sleeve T-shirt</a></td>
+                    <td>500 taka</td>
+                    <td>
+                        <input type="number" name="" min="1" value="1">
+                    </td>
+                    <td>500 taka</td>
+                    <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td><img src="product3.jpg" class="model"><a href="">Cotton Short Sleeve T-shirt</a></td>
+                    <td>500 taka</td>
+                    <td>
+                        <input type="number" name="" min="1" value="1">
+                    </td>
+                    <td>500 taka</td>
+                    <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                </tr>
+            </table>
+            <div class="subtotal">
+                <div class="promocode">
+                    <form class="" action="index.html" method="post">
+                        <h2>Add Promo Code</h2>
+                        <input type="text" name="" value="">
+                        <input type="submit" name="" value="Apply">
+                    </form>
+                </div>
+                <div class="CheckOut">
+                    <table>
+                        <tr>
+                            <td><h2>Sub Total: </h2></td>
+                            <td><h3>1000 TAKA</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Discount <h5> (5%)</h5> :</h2></td>
+                            <td><h3> 50 taka</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Delivery fee:</h2></td>
+                            <td><h3> 50 taka</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Total:</h2></td>
+                            <td><h3> 950 taka</h3></td>
+                        </tr>
+                    </table>
+                    <input type="submit" name="" value="CheckOut">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="contuct-us" class="grid">
+        <div class="social-links">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-google"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Blogs</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sceurity</a>
+            <a href="#">Events</a>
+            <a href="#">Contuct us</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <style>
+    /* -- quantity box -- */
+
+.quantity {
+display: inline-block; }
+
+.quantity .input-text.qty {
+width: 35px;
+height: 39px;
+padding: 0 5px;
+text-align: center;
+background-color: transparent;
+border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+text-align: left;
+position: relative;
+white-space: nowrap;
+vertical-align: top; }
+
+.quantity.buttons_added input {
+display: inline-block;
+margin: 0;
+vertical-align: top;
+box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+padding: 7px 10px 8px;
+height: 41px;
+background-color: #ffffff;
+border: 1px solid #efefef;
+cursor:pointer;}
+
+.quantity.buttons_added .minus {
+border-right: 0; }
+
+.quantity.buttons_added .plus {
+border-left: 0; }
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+background: #eeeeee; }
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+-moz-appearance: none;
+margin: 0; }
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+outline: none; }
+
+
+    </style>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+</head>
+
+<body>
+
+    <div class="number-input">
+        <form class="" action="index.html" method="post">
+            div class="quantity buttons_added">
+	<input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+</div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

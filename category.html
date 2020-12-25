@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" type="text/css" href="lightslider.css" />
+    <!--Jquery-->
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <title>Songkolok</title>
+    <link rel="shortcut icon" href="songkolok.png">
+</head>
+
+<body>
+    <div id="nav" class="grid">
+        <div class="logo">
+            <a href="#"><img id="logo-img" src="songkolok.png"></a>
+            <a href="#"><img id="logo-title" src="logo-title.png" alt=""></a>
+        </div>
+
+        <div class="menu-open" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">EID SPEACIAL</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a style="cursor:pointer" onclick="login()"><i class='fas fa-user'></i> Login</a>
+            <a href="#"><i id="shopping-bag" class='fas fa-shopping-bag'></i> Cart (0)</a>
+            <form id="search">
+                <input type="text" placeholder="Search Products..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="links">
+            <form id="search" class="nav-menu">
+                <input type="text" placeholder="Search Products..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a class="nav-menu" id="cart" href=""><i id="shopping-bag" class='fas fa-shopping-bag'></i> Cart (0)</a>
+            <a class="nav-menu" style="cursor:pointer" onclick="login()">Login <i class='far fa-user'></i></a>
+        </div>
+    </div>
+
+    <div id="login-block">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form action="#" id="login">
+                <h4>Email</h4>
+                <input class="fas fa-envelope" type="email" placeholder="&#xf0e0; Type your email"><br>
+                <h4>Password</h4>
+                <input class="fas fa-lock" type="password" placeholder="&#xf023; Type your password"><br>
+                <a href="#">
+                    <h6>Forgot password?</h6>
+                </a>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="line">
+            <div class="or">or</div>
+        </div>
+        <div class="login-social-media">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-google"></a>
+        </div>
+        <div class="signup-link">
+            <h5>DON’T HAVE AN ACCOUNT?</h5>
+            <a style="cursor:pointer" onclick="signup()">SIGN UP</a>
+        </div>
+    </div>
+
+    <div id="signup-block">
+        <div class="login-form">
+            <h1>Sign Up</h1>
+            <form action="#" id="login">
+                <h4>Email</h4>
+                <input type="email" class="fas fa-envelope" type="email" placeholder="&#xf0e0; Type your email"><br>
+                <h4>Password</h4>
+                <input type="password" class="fas fa-lock" type="password" placeholder="&#xf023; Type your password"><br>
+                <br>
+                <h4>Re-Password</h4>
+                <input type="password" class="fas fa-lock" type="password" placeholder="&#xf023; Type your password again"><br>
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="line">
+            <div class="or">or</div>
+        </div>
+        <div class="login-social-media">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-google"></a>
+        </div>
+    </div>
+
+    <div id="images" class="grid">
+        <div class="main-menu-block">
+            <ul class="main-menu">
+                <li><a href="#">Home</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">MEN</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">WOMEN</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">EID SPEACIAL</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">KIDS</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">Home</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+                <li><a href="#">Home</a>
+                    <ul class="sub-menu1">
+                        <a href="##">T-shirt</a>
+                        <a href="">Jeans Pant</a>
+                        <a href="">Shirt</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="category-name">
+            <h1>Women</h1>
+        </div>
+    </div>
+
+    <div class="category-container" class="grid">
+        <div class="product-container">
+            <div class="box">
+                <img src="product1.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product11.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product2.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product3.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product4.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product5.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product6.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product7.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product8.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product9.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product10.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product11.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product1.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product11.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product2.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product3.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product4.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product5.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product6.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product7.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product8.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product9.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product10.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product11.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="product1.jpg" class="model">
+                <div class="details">
+                    <h4>Cotton Short Sleeve T-shirt</h4>
+                    <h3>Price: 150tk</h3>
+                    <i id="cart-bag" class='fas fa-shopping-bag'></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="product-show" id="product-show">
+        <div class="main-product">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeProduct()">&times;</a>
+            <div class="product">
+                <img src="product8.jpg" class="model">
+                <h1>Cotton Short Sleeve T-shirt</h1>
+                <form class="cart-form" action="index.html" method="post">
+                    <div class="field">
+                        <div class="label">Color</div>
+                        <select class="" name="">
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="label">Size</div>
+                        <select class="" name="">
+                            <option value="White">S</option>
+                            <option value="Black">M</option>
+                            <option value="Red">L</option>
+                            <option value="Red">XL</option>
+                            <option value="Red">XXL</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="label">Qualtity</div>
+                        <input type="number" min="1" name="" value="1">
+                    </div>
+                    <div class="field">
+                        <h2>Total Price: 350 Taka</h2>
+                    </div>
+                    <input type="submit" name="" value="Add To Cart">
+                </form>
+            </div>
+            <div class="product-details">
+                <h2>Description</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, quaerat praesentium dolores iure, quae, quo itaque quod beatae error ratione expedita quisquam sed! Fuga fugit nihil aliquam voluptates iusto minus rerum, illum nesciunt debitis dolor quaerat suscipit, autem tenetur at eos, vero quidem hic cumque corporis? Nisi, eius laborum est?</p>
+            </div>
+        </div>
+    </div>
+    <div id="contuct-us" class="grid">
+        <div class="social-links">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-google"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Blogs</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sceurity</a>
+            <a href="#">Events</a>
+            <a href="#">Contuct us</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

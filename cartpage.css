@@ -1,0 +1,134 @@
+.my-cart{
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(166, 55, 0);
+}
+#cart-container{
+    padding: 5px;
+    /* background: red; */
+    min-height: 500px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#cartdetails{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#cartdetails th {
+  text-align: left;
+  background-color: #5b5b5b;
+  color: white;
+  border: 1px solid black;
+  padding: 12px;
+  height: 25px;
+}
+
+#cartdetails table{
+    height: 300px;
+    overflow-x: hidden;
+}
+
+#cartdetails tr:nth-child(even){background-color: #ffeeee;}
+
+#cartdetails tr:hover {background-color: #ddd;}
+
+#cartdetails td{
+    padding: 5px;
+    text-align: center;
+}
+
+#cartdetails td:nth-child(2){
+    width: 30%;
+    display: inline-flex;
+    align-items: center;
+}
+
+#cartdetails td img{
+    min-width: 50px;
+    width: 5%;
+}
+
+#cartdetails td:nth-child(2) a{
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+#cartdetails td input[type="number"]{
+    width: 50px;
+    border: none;
+    padding: 3px;
+    text-overflow: clip;
+}
+
+#cartdetails a{
+    color: black;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background: rgb(255, 236, 236);
+    padding: 15px;
+}
+
+.promocode input[type="text"]{
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.promocode input[type="submit"]{
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.CheckOut{
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.CheckOut tr{
+    /* background: red; */
+    padding: 150px;
+}
+
+.CheckOut tr td{
+    padding: 3px;
+}
+
+.CheckOut tr td h5{
+    padding: 3px;
+    margin-top: 3px;
+    margin-left: 85px;
+}
+
+.CheckOut tr td h2{
+    float: left;
+}
+
+.CheckOut tr td h3{
+    margin-left: 55px;
+}
+
+.CheckOut input[type="submit"]{
+    width: 100%;
+    font-size: 25px;
+    padding: 12px;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(69, 69, 69);
+}
+
+
+/*  */

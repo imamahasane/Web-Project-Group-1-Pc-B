@@ -1,0 +1,38 @@
+#images{
+    position: relative;
+}
+.main-menu{
+    background: rgb(43, 43, 43);
+    position: relative;
+}
+
+.category-name h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.category-container {
+    /* background: #333; */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+}
+.product-container {
+    box-shadow: 5px 3px 15px 0px rgb(60, 60, 60);
+    overflow-y: scroll;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color: blue; */
+    margin-bottom: 15px;
+    /* width: 100%; */
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container::-webkit-scrollbar {
+  width: 0px;
+}
+y
